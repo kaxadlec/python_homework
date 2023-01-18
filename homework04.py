@@ -46,3 +46,41 @@
 #     a,b = list(rhymes[k])
 #     print(f'{inx1} {inx2} {inx3} {a.capitalize()}!\nSomeone better {b}.')
 
+#8.1
+e2f = {'dog':'chien','cat':'chat','walrus':'morse'}
+print(e2f)
+#8.2
+print(e2f['walrus'])
+
+#8.3
+f2e = {}  #f2e 라는 새로운 프랑스어-영어 dictionary 만들기
+for key, value in e2f.items():
+    f2e[value]=key
+print(f2e)
+#8.3 다른방법
+f2e={v:k for k,v in e2f.items()}
+print(f2e)
+
+#8.4
+print(e2f['dog'])
+
+#8.5
+print(e2f.keys())
+
+#8.6
+life = {'animals' : {'cats' : {'Henri', 'Grumpy','lucy'}, 'octopi' : '', 'emus' : ''}, 'plants' : '', 'other' : '' }
+
+#8.7
+print(life.keys())
+print(list(life.keys()))  # list 함수를 활용해 정리해서 출력
+
+#8.8
+print(life['animals'].keys())
+
+#8.9
+cat = life['animals']['cats']
+print(cat)
+
+#8.10
+squares =  {i : i**2 for i in range(10)}
+print(squares)
